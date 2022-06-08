@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffae00"
+    tools:context=".LevelScreen">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/FirstImage"
+            android:layout_width="119dp"
+            android:layout_height="149dp"
+            android:onClick="firstSelect"
+            android:scaleType="fitXY"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/kennyoyun" />
+
+        <ImageButton
+            android:id="@+id/SecondImage"
+            android:layout_width="117dp"
+            android:layout_height="151dp"
+            android:onClick="secondSelect"
+            android:scaleType="fitXY"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/mortyoyun" />
+
+        <ImageButton
+            android:id="@+id/ThirdImage"
+            android:layout_width="115dp"
+            android:layout_height="149dp"
+            android:onClick="thirdSelect"
+            android:scaleType="fitXY"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/elsaoyun" />
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
